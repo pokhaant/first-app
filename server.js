@@ -36,4 +36,4 @@ app.get('/profile/:id', (req,res)=>{profile.profileHandler(req,res,db)});
 app.put('/image', (req,res)=>{image.imageHandler(req,res,db)});
 app.post('/imageApi', (req,res)=>{image.imageApiHandler(req,res)});
 
-app.listen(2000);
+app.listen(process.env.PORT || 2000);
