@@ -1,7 +1,7 @@
 const express= require('express');
 const bodyParser= require('body-parser');
 const cors= require('cors');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const register= require('./controllers/register.js');
 const signin= require('./controllers/signin.js');
 const profile= require('./controllers/profile.js');
